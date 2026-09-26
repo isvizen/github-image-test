@@ -12,11 +12,12 @@ Tests which image formats are supported in GitHub README Markdown.
 | Width      | [830 px](./docs/width.md)                                 |
 | FPS        | [20 FPS](https://github.com/ImageOptim/gifski/issues/351) |
 
-| Format | Command                                                                              | Size |
-| :----- | :----------------------------------------------------------------------------------- | ---: |
-| GIF    | `ffmpeg -i test.mp4 -vf scale=830:-2,fps=fps=20 -loop 0 -c:v gif test.gif`           | 14MB |
-| WebP   | `ffmpeg -i test.mp4 -vf scale=830:-2,fps=fps=20 -loop 0 -c:v libwebp_anim test.webp` |  6MB |
-| AVIF   | `ffmpeg -i test.mp4 -vf scale=830:-2,fps=fps=20 -loop 0 -c:v libsvtav1 test.avif`    |  2MB |
+| Format | Command                                                                                               | Size |
+| :----- | :---------------------------------------------------------------------------------------------------- | ---: |
+| GIF    | `ffmpeg -i test.mp4 -vf scale=830:-2,fps=fps=20 -loop 0 -c:v gif test.gif`                            | 14MB |
+| WebP   | `ffmpeg -i test.mp4 -vf scale=830:-2,fps=fps=20 -loop 0 -c:v libwebp_anim test.webp`                  |  6MB |
+| AVIF   | `ffmpeg -i test.mp4 -vf scale=830:-2,fps=fps=20 -loop 0 -c:v libsvtav1 test.avif`                     |  2MB |
+| OPAVIF | `ffmpeg -i test.mp4 -vf scale=830:-2,fps=fps=20 -loop 0 -c:v libsvtav1 -preset 6 -crf 23 testop.avif` |  4MB |
 
 ### MP4 — Source
 
@@ -33,3 +34,7 @@ Tests which image formats are supported in GitHub README Markdown.
 ### AVIF
 
 ![AVIF format](./animated/test.avif)
+
+### OPAVIF
+
+![OPAVIF format](./animated/testop.avif)
