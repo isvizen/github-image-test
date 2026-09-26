@@ -5,7 +5,7 @@ Tests which image formats are supported in GitHub README Markdown.
 > [!NOTE]
 > Doesn't apply for GitHub Rich Text Editor.
 
-## Animated Image
+## Specs
 
 | Constraint | Value                                                     |
 | :--------- | :-------------------------------------------------------- |
@@ -19,22 +19,9 @@ Tests which image formats are supported in GitHub README Markdown.
 | AVIF   | `ffmpeg -i test.mp4 -vf scale=830:-2,fps=20 -loop 0 -c:v libsvtav1 test.avif`                     |  2MB |
 | OPAVIF | `ffmpeg -i test.mp4 -vf scale=830:-2,fps=30 -loop 0 -c:v libsvtav1 -preset 6 -crf 23 testop.avif` |  5MB |
 
-### MP4 — Source
+## Results
 
-![MP4 format](./src/test.mp4)
-
-### GIF
-
-![GIF format](./src/test.gif)
-
-### WebP
-
-![WebP format](./src/test.webp)
-
-### AVIF
-
-![AVIF format](./src/test.avif)
-
-### OPAVIF
-
-![OPAVIF format](./src/testop.avif)
+- GIF ([click here to see](./docs/gif.md))
+- WebP ([click here to see](./docs/webp.md))
+- AVIF ([click here to see](./docs/avif.md))
+- OPAVIF ([click here to see](./docs/opavif.md))
