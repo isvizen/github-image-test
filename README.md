@@ -21,20 +21,20 @@ Tests which image formats are supported in GitHub README Markdown.
 
 ### MP4 — Source
 
-![MP4 format](./animated/test.mp4)
+![MP4 format](./src/test.mp4)
 
 ### GIF
 
-![GIF format](./animated/test.gif)
+![GIF format](./src/test.gif)
 
 ### WebP
 
-![WebP format](./animated/test.webp)
+![WebP format](./src/test.webp)
 
 ### AVIF
 
-![AVIF format](./animated/test.avif)
+![AVIF format](./src/test.avif)
 
 ### OPAVIF
 
-![OPAVIF format](./animated/testop.avif)
+![OPAVIF format](./src/testop.avif)
