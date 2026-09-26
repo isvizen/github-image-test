@@ -9,7 +9,7 @@ Tests which image formats are supported in GitHub README Markdown.
 
 | Constraint | Value |
 |:-----------|:------|
-| Width      | [830 px](./misc/width.md) |
+| Width      | [830 px](./docs/width.md) |
 | FPS        | [20 FPS](https://github.com/ImageOptim/gifski/issues/351) |
 
 | Format | Command | Size |
